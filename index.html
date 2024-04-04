@@ -3,13 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Привет 99 раз</title>
+<title>Привет, студент!</title>
 </head>
 <body>
 
+<h1>Привет, студент!</h1>
+
+<label for="studentName">Введите ваше имя:</label>
+<input type="text" id="studentName">
+<button onclick="greetStudent()">Приветствовать</button>
+
 <script>
-  for (let i = 0; i < 99; i++) {
-    document.write("Привет<br>");
+  function greetStudent() {
+    const name = document.getElementById("studentName").value;
+    alert("Привет, " + name + "! Добро пожаловать!");
   }
 </script>
 
